@@ -7,7 +7,7 @@ def open_page(search):
         return
     
     words=search.split(" ")
-    url="https://music.163.com/#/search/m/?s="
+    base_url="https://music.163.com/#/search/m/?s="
     # 用%20连接所有关键词，避免末尾多一个%20
     search_str = "%20".join(words)
     final_url = base_url + search_str
